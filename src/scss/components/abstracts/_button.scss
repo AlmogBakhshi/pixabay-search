@@ -1,0 +1,8 @@
+.button {
+    @include flex();
+    cursor: pointer;
+
+    svg {
+        margin-right: 5px;
+    }
+}

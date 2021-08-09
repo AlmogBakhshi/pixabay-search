@@ -1,0 +1,25 @@
+.search_images {
+
+    &__search {
+        display: flex;
+        justify-content: center;
+        
+        & input {
+            outline: none;
+        }
+    }
+
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__pageing {
+        display: flex;
+        justify-content: center;
+        & select{
+            outline: none;
+            @include scrollbar(3px, 3px);
+        }
+    }
+}
