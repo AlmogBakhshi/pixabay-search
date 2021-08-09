@@ -30,6 +30,7 @@ const SearchImages = () => {
 
     const handleSelectPage = (e: React.ChangeEvent<HTMLSelectElement>) => {
         handleSelectPageSize(e, 1);
+        e.currentTarget.blur();
         imagesStore.setSelectedPage(parseInt(e.target.value));
         imagesStore.fetchImages(true);
     }
